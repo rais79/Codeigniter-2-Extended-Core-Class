@@ -1,0 +1,2 @@
+Codeigniter-Extended-Core-Class
+===============================
