@@ -14,7 +14,7 @@ class My_Db_Model extends My_Model
 	{
 		$args = func_get_args();
 		if(count($args)>1 || is_array($args[0])):
-			$this->db->where($args);
+			$this->db->where($args[0]);
 		else:
 			$this->db->where('id', $args[0]);
 		endif;
@@ -43,7 +43,7 @@ class My_Db_Model extends My_Model
 	{
 		$args = func_get_args();
 		if(is_array($args[0])):
-			$this->db->where($args);
+			$this->db->where($args[0]);
 		else:
 			$this->db->where('id', $args[0]);
 		endif;
@@ -55,7 +55,7 @@ class My_Db_Model extends My_Model
 	{
 		$args = func_get_args();
 		if(count($args)>1 || is_array($args[0])):
-			$this->db->where($args);
+			$this->db->where($args[0]);
 		else:
 			$this->db->where('id', $args[0]);
 		endif;
