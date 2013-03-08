@@ -2,7 +2,7 @@
 
 class My_Controller extends CI_Controller {
 
-	public $my_header = 'Extended Core Class xample';
+	public $my_header = 'Extended Core Class Example';
 	public $my_template;
 	
 }
