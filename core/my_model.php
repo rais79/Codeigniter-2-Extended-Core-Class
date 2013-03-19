@@ -10,6 +10,7 @@ class My_Db_Model extends My_Model
 	
 	protected $_table;
 	
+	//$get($id) or $get(array('your_field' => 'value'))
 	public function get()
 	{
 		$args = func_get_args();
