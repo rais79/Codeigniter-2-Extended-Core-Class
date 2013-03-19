@@ -18,7 +18,7 @@ class My_Public extends My_Controller {
 		$this->load->library('session');
 		$this->load->helper('form');
 		$this->load->helper('url');
-;	}
+	}
 }
 
 
