@@ -22,6 +22,18 @@ class My_Db_Model extends My_Model
 			
 		return $this->db->get($this->_table)->row();
 	}
+
+	public function get_many()
+	{
+		$args = func_get_args();
+		if(count($args)>1 || is_array($args[0])):
+			$this->db->where($args[0]);
+		else:
+			$this->db->where('id', $args[0]);
+		endif;
+			
+		return $this->db->get($this->_table)->result();
+	}
 	
 	public function get_all()
 	{
