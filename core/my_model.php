@@ -55,6 +55,9 @@ class My_Db_Model extends My_Model
 	public function update()
 	{
 		$args = func_get_args();
+		
+		$args[1]['updated_at'] = date('Y-m-d H:i:s');
+		
 		if(is_array($args[0])):
 			$this->db->where($args[0]);
 		else:
