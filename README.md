@@ -22,5 +22,5 @@ function __autoload($class)
 5. Setting Your Own Prefix - To set your own sub-class prefix, open your application/config/config.php file and look for this item:
 
 <pre>
-$config['subclass_prefix'] = 'MY_';
+$config['subclass_prefix'] = 'My_';
 </pre>
