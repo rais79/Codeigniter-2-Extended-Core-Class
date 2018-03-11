@@ -12,7 +12,7 @@ class My_Public extends My_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('MExample');
+		$this->load->model('Mexample');
 		$this->my_template = 'example_template';
 		$this->load->database();
 		$this->load->library('session');
